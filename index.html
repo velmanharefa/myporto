@@ -15,12 +15,17 @@
 <body>
     <!-- Navbar Section Start -->
     <section class="header">
-        <nav class="nav navbar nav_border justify-content-end px-5">
-            <div class="d-flex nav_content">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Works</a>
-                <a class="nav-link" href="#">Contact</a>
+        <nav class="nav navbar nav_border justify-content-center px-5">
+            <div class="container-fluid d-flex nav_content p-0">
+                <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                    <a href="#" style="font-style: italic; text-decoration: none;">velmanharefa</a>
+                </div>
+                <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Works</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
             </div>
         </nav>
     </section>
@@ -28,13 +33,13 @@
     
     <!-- Content Section Start -->
     <section class="content">
-        <div class="container-fluid home border border-danger">
-            <div class="row">
-                <div class="col-sm-6 border border-primary">
+        <div class="container-fluid home">
+            <div class="row introduction">
+                <div class="col-sm-6 d-flex justify-content-center align-items-center">
                     <img src="./picture/velman.png" alt="">
                 </div>
-                <div class="col-sm-6 d-flex justify-content-center align-items-center border border-primary">
-                    <h1>Hello! I'm
+                <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                    <h1 style="color: #FFFFFF;">Hello! I'm
                         <br><span>Velman Noeli Harefa</span>
                         <br><span>UI Designer & Web Development</span>   
                     </h1>
@@ -42,7 +47,11 @@
             </div>
         </div>
 
-        
+        <div class="container-fluid home">
+            <div class="row introduction">
+                <h1 class="my-5" style="text-align: center; font-style: italic;">About Me</h1>
+            </div>
+        </div>
     </section>
     <!-- Content Section End -->
 
