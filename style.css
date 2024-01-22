@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav_border{
+    background-color:black;
+}
+
+.nav_content a{
+    color: rgb(175, 202, 175);
+}
+
+/* .home{
+    width: 729px;
+    height: 364px;
+    flex-shrink: 0;
+} */
+
+.home img{
+    width: 500px;
+    height: 500px;
+}
+
