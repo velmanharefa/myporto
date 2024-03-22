@@ -10,21 +10,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    
+    <style>
+        /* Additional styles for responsiveness */
+        .introduction {
+            padding: 20px;
+        }
+        .header {
+            background-color: #f8f9fa; /* Change background color as needed */
+        }
+        .nav_content {
+            flex-wrap: wrap;
+        }
+        .nav-link {
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar Section Start -->
     <section class="header">
         <nav class="nav navbar nav_border justify-content-center px-5">
             <div class="container-fluid d-flex nav_content p-0">
-                <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
                     <a href="#" style="font-style: italic; text-decoration: none;">velmanharefa</a>
                 </div>
-                <div class="col-sm-6 d-flex justify-content-center align-items-center">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Works</a>
-                    <a class="nav-link" href="#">Contact</a>
+                <div class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
+                    <a class="nav-link active" aria-current="page" href="#main">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#skill">Skills</a>
+                    <a class="nav-link" href="#project">Project</a>
                 </div>
             </div>
         </nav>
@@ -33,30 +47,67 @@
     
     <!-- Content Section Start -->
     <section class="content">
-        <div class="container-fluid home">
+        <div class="container-fluid home" id="main">
             <div class="row introduction">
-                <div class="col-sm-6 d-flex justify-content-center align-items-center border border-primary ">
-                    <img src="./picture/velman.png" alt="">
+                <div class="col-sm-12 myPict col-md-6 d-flex justify-content-center align-items-center border border-primary ">
+                    <img src="./images/me.JPG" alt="">
                 </div>
-                <div class="col-sm-6 d-flex align-items-center border border-primary">
+                <div class="col-sm-12 col-md-6 d-flex flex-column align-items-start justify-content-center border border-primary ">
                     <h1 style="color: #FFFFFF;">Hello! I'm
                         <br><span>Velman Noeli Harefa</span>
-                        <br><span>UI Designer & Web Development</span>   
+                        <br><span>UI Designer & Web Development</span>  
                     </h1>
+                    <div class="d-flex">
+                        <a href="https://github.com/velmanharefa"><img src="./images/github.png" alt="github" style="width: 40px; height: 40px;"></a>
+                        <a href="https://www.instagram.com/velmanharefa/"><img src="./images/instagram.png" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/in/velman-harefa-bba14129b/"><img src="./images/linkedin.png" alt="linkedin"></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid home">
+        <div class="container-fluid home" id="about">
             <div class="row introduction">
                 <h1 class="my-5" style="text-align: center; font-style: italic;">About Me</h1>
+                <div class="hide">
+                    <div class="cont_x cont_left">
+                        <img src="images/born.jpg" width="40px" height="40px" style="border-radius: 50%;">
+                        <div class="text-box">
+                            <h2>My Birthday</h2>
+                            <small>13th July 2003</small>
+                            <p>I was born on Sunday at 03.00 am, at that time I was born normal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hide-2">
+                    <div class="cont_x cont_right">
+                        <img src="images/sd.jpg" width="40px" height="40px" style="border-radius: 50%;">
+                        <div class="text-box-kanan">
+                            <h2>Graduated from Elementary School</h2>
+                            <small>2015</small>
+                            <p>I graduated from SD Negeri 1 Gunungsitoli</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="container-fluid home" id="skill">
+            <div class="row introduction">
+                <h1 class="my-5" style="text-align: center; font-style: italic;">Skill</h1>
+            </div>
+        </div>
+
+        <div class="container-fluid home" id="project">
+            <div class="row introduction">
+                <h1 class="my-5" style="text-align: center; font-style: italic;">Project</h1>
             </div>
         </div>
     </section>
     <!-- Content Section End -->
-
-    
-
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
