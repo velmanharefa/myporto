@@ -82,3 +82,4 @@ function showContent(type) {
         document.getElementById('content_tools2').classList.add('d-none');
     }
 }
+
