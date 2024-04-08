@@ -6,6 +6,12 @@
     color: #FFFFFF;
 }
 
+/* .navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+} */
+
 .nav_border{
     background-color:black;
 }
@@ -14,19 +20,20 @@
     color: #FFFFFF;
 }
 
+
 .home{
-    height:889px;
+    height:989px;
     background: #181C25;
     box-shadow: 0px 4px 19.6px 0px rgba(0, 0, 0, 0.25);
 }
 
 .myPict img{
-    width: 500px;
+    width: 450px;
     height: 500px;
-    border-radius: 19px;
+    border-radius: 33px;
     background: #e0e0e0;
-    box-shadow:  9px 9px 8px #bebebe,
-                -9px -9px 8px #ffffff;
+    box-shadow:  5px 5px 20px #222831,
+                -5px -5px 20px #222831;
 }
 
 .introduction{
@@ -235,11 +242,6 @@
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.card svg {
-width: 48px;
-fill: #333;
-transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
 
 .card:hover {
 transform: rotate(-5deg) scale(1.1);
